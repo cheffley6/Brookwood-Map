@@ -6,7 +6,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="http://www.brookwoodhighschool.net//favicon.ico" />
 </head>
 <center><p>This is the alpha version of an interactive map of Brookwood High School in Snellville, GA. This website is still under heavy construction. <p></center>
-<img src="bwood cleaner map.jpg" alt="bwood map" style="width:1620px;height:1180px" border = "0" usemap = "#Map">
+<img src="bwood rough map.jpg" alt="bwood map" style="width:1620px;height:1180px" border = "0" usemap = "#Map">
 <map name="Map" id="Map">
     <area alt="B14" title="B14" href="B14_schedule.html" shape="rect" coords="301,352,332,409" />
     <area alt="B16" title="B16" href="B16_schedule.html" shape="rect" coords="246,353,299,399" />
@@ -124,7 +124,7 @@
     <area alt="E1" title="E1" href="E1_schedule.html" shape="rect" coords="825,497,863,535" />
     <area alt="E2" title="E2" href="E2_schedule.html" shape="rect" coords="825,456,862,495" />
     <area alt="E3" title="E3" href="E3_schedule.html" shape="rect" coords="807,383,841,432" />
-    <area alt="E4" title="E4" href="E4_schedule.html" shape="rect" coords="841,382,874,431" />
+    <area alt="E4" title="E4" href="E1_schedule.html" shape="rect" coords="841,382,874,431" />
     <area alt="E5_1" title="E5- Chorus Room" href="E5_schedule.html" shape="rect" coords="890,339,968,430" />
     <area alt="E5_2" title="E5- Chorus Room" href="E5_schedule.html" shape="rect" coords="978,340,968,387" />
     <area alt="E7_1" title="E7" href="E7_schedule.html" shape="rect" coords="889,314,978,339" />
@@ -203,92 +203,53 @@
 
 
 </map>
-<style> 
+<style>
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+        display: none;
+        position: center;
+        z-index: 1;
+        padding-top: 1000 px;
 }
-
-/* Modal Content */
 .modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 40%;
+    width: 80%;
 }
-
-/* The Close Button */
 .close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
+
 </style>
-</head>
-<body>
-
-<center>
-<button id="Bell_sched_button">Bell Schedule</button>
-</center>
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <center>
-    <h1>Brookwood HS Bell Schedule</h1>
-    <h2>1st - 7:24-8:22<br>2nd - 8:28-9:20<br>3rd - 9:26-10:18<br>4th - 10:24-11:16<br>5th - 11:22-12:14<br>6th - 12:20-1:12<br>7th - 1:18-2:10</h2>
-    </center>
-  </div>
-
+<button id="bell_sched">Bell Schedule</button>
+<div id="Modal_bell" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Bell Schedule</h1>
+    </div>
 </div>
-
 <script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("Bell_sched_button");
-
-// Get the <span> element that closes the modal
+var modal_for_bell = document.getElementById('Modal_bell');
+var bell_btn = document.getElementById("bell_sched");
 var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
+modal_for_bell.onclick = function() {
+    modal_for_bell.style.display = "none";
 }
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modal_for_bell)  {
+        modal_for_bell.style.display = "none";
     }
 }
-
 </script>
 </body>
 </html>
