@@ -1,0 +1,17 @@
+State of the Page Address 4/23/17
+-picking things back up, still been busy with school and stuff but am going to start finishing pages, adding a contact/credit page, possibly implement other ideas (search function? schedules, lists) and prepping for an official release
+-cleanING up the image used for the map, attempting to add colors for each hall(?)
+-add final exam bell schedules, possibly separate page
+-search function (look up a teacher or classroom and immediately get page for that, possibly have to compile a couple giant arrays for all classes/teachers (probably too complicated tbh))
+-add a/b times on bell schedule
+-(kind of) have some degree of css anywhere on the page
+-page include picture of classroom? probably (definitely) not
+-could link to teacher's webpage on their room site if they have a public one like dimsdale
+Pages THAT HAVE BEEN MADE BUT ARE still needing data:
+T:1-9,13-15
+F:1,2B,3,5,7-9,12,14,admin office, 30,33,31,29,27,37,
+E:4,23
+C:1,3,16,18,21,28,29,34,33,36,35,38
+B: 1,3,7(cpu lab)
+D:6 (dance),7(maroon gym),2(gold gym)4,5
+A: 22,21,23,25,36,34,32,12 (100/200s are done though)
